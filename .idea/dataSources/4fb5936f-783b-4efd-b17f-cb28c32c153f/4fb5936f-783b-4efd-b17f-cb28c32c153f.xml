@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="uoacoda@mysql1.sporadic.co.nz">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="uoacoda">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="sample_db"/>
+    <schema id="5" parent="1" name="txie936"/>
+    <table id="6" parent="2" name="AlbumsAudio"/>
+    <table id="7" parent="2" name="AlbumsAudio_beta_1"/>
+    <table id="8" parent="2" name="AlbumsImage"/>
+    <table id="9" parent="2" name="AlbumsImage_beta_1"/>
+    <table id="10" parent="2" name="AlbumsVideo"/>
+    <table id="11" parent="2" name="AlbumsVideo_beta_1"/>
+    <table id="12" parent="2" name="Article"/>
+    <table id="13" parent="2" name="Article_beta_1"/>
+    <table id="14" parent="2" name="Comment"/>
+    <table id="15" parent="2" name="CommentReply"/>
+    <table id="16" parent="2" name="CommentReply_beta_1"/>
+    <table id="17" parent="2" name="Comment_beta_1"/>
+    <table id="18" parent="2" name="UserInfo"/>
+    <table id="19" parent="2" name="UserInfo_beta_1"/>
+    <table id="20" parent="2" name="UserRelationship"/>
+    <table id="21" parent="2" name="UserRelationship_beta_1"/>
+    <table id="22" parent="2" name="likeInfo"/>
+    <column id="23" parent="6" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="24" parent="6" name="fileName">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="25" parent="6" name="username">
+      <Position>3</Position>
+      <DataType>char(10)|0</DataType>
+    </column>
+    <column id="26" parent="6" name="address">
+      <Position>4</Position>
+      <DataType>varchar(1000)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="6" name="postTime">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="28" parent="6" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="29" parent="7" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="30" parent="7" name="fileName">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="31" parent="7" name="username">
+      <Position>3</Position>
+      <DataType>char(10)|0</DataType>
+    </column>
+    <column id="32" parent="7" name="address">
+      <Position>4</Position>
+      <DataType>varchar(1000)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="7" name="postTime">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <index id="34" parent="7" name="username">
+      <ColNames>username</ColNames>
+    </index>
+    <key id="35" parent="7" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="36" parent="7" name="AlbumsAudio_beta_1_ibfk_1">
+      <ColNames>username</ColNames>
+      <RefSchemaName>uoacoda</RefSchemaName>
+      <RefTableName>UserInfo_beta_1</RefTableName>
+      <RefColNames>username</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="37" parent="8" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="38" parent="8" name="fileName">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="39" parent="8" name="username">
+      <Position>3</Position>
+      <DataType>char(10)|0</DataType>
+    </column>
+    <column id="40" parent="8" name="address">
+      <Position>4</Position>
+      <DataType>varchar(1000)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="8" name="postTime">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="42" parent="8" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="43" parent="9" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="44" parent="9" name="fileName">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="45" parent="9" name="username">
+      <Position>3</Position>
+      <DataType>char(10)|0</DataType>
+    </column>
+    <column id="46" parent="9" name="address">
+      <Position>4</Position>
+      <DataType>varchar(1000)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="9" name="postTime">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <index id="48" parent="9" name="username">
+      <ColNames>username</ColNames>
+    </index>
+    <key id="49" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="50" parent="9" name="AlbumsImage_beta_1_ibfk_1">
+      <ColNames>username</ColNames>
+      <RefSchemaName>uoacoda</RefSchemaName>
+      <RefTableName>UserInfo_beta_1</RefTableName>
+      <RefColNames>username</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="51" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="52" parent="10" name="fileName">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="53" parent="10" name="username">
+      <Position>3</Position>
+      <DataType>char(10)|0</DataType>
+    </column>
+    <column id="54" parent="10" name="address">
+      <Position>4</Position>
+      <DataType>varchar(1000)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="10" name="postTime">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="56" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="57" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="58" parent="11" name="fileName">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="59" parent="11" name="username">
+      <Position>3</Position>
+      <DataType>char(10)|0</DataType>
+    </column>
+    <column id="60" parent="11" name="address">
+      <Position>4</Position>
+      <DataType>varchar(1000)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="11" name="postTime">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <index id="62" parent="11" name="username">
+      <ColNames>username</ColNames>
+    </index>
+    <key id="63" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="64" parent="11" name="AlbumsVideo_beta_1_ibfk_1">
+      <ColNames>username</ColNames>
+      <RefSchemaName>uoacoda</RefSchemaName>
+      <RefTableName>UserInfo_beta_1</RefTableName>
+      <RefColNames>username</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="65" parent="12" name="articleID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="66" parent="12" name="title">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="67" parent="12" name="content">
+      <Position>3</Position>
+      <DataType>varchar(5000)|0</DataType>
+    </column>
+    <column id="68" parent="12" name="postTime">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="69" parent="12" name="tags">
+      <Position>5</Position>
+      <DataType>varchar(99)|0</DataType>
+    </column>
+    <column id="70" parent="12" name="username">
+      <Position>6</Position>
+      <DataType>varchar(99)|0</DataType>
+    </column>
+    <column id="71" parent="12" name="userAvatar">
+      <Position>7</Position>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <column id="72" parent="12" name="userNickName">
+      <Position>8</Position>
+      <DataType>varchar(99)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="73" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>articleID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="74" parent="13" name="articleID">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="75" parent="13" name="title">
+      <Position>2</Position>
+      <DataType>varchar(99)|0</DataType>
+    </column>
+    <column id="76" parent="13" name="content">
+      <Position>3</Position>
+      <DataType>longtext|0</DataType>
+    </column>
+    <column id="77" parent="13" name="postTime">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="78" parent="13" name="tags">
+      <Position>5</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="79" parent="13" name="username">
+      <Position>6</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="80" parent="13" name="userAvatar">
+      <Position>7</Position>
+      <DataType>varchar(256)|0</DataType>
+    </column>
+    <index id="81" parent="13" name="username">
+      <ColNames>username
+userAvatar</ColNames>
+    </index>
+    <key id="82" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>articleID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="83" parent="13" name="Article_beta_1_ibfk_1">
+      <ColNames>username
+userAvatar</ColNames>
+      <RefSchemaName>uoacoda</RefSchemaName>
+      <RefTableName>UserInfo_beta_1</RefTableName>
+      <RefColNames>username
+avatar</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="84" parent="14" name="commentID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="85" parent="14" name="content">
+      <Position>2</Position>
+      <DataType>varchar(500)|0</DataType>
+    </column>
+    <column id="86" parent="14" name="postTime">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="87" parent="14" name="username">
+      <Position>4</Position>
+      <DataType>varchar(99)|0</DataType>
+    </column>
+    <column id="88" parent="14" name="articleID">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="89" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>commentID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="90" parent="15" name="commentReplyID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="91" parent="15" name="content">
+      <Position>2</Position>
+      <DataType>varchar(500)|0</DataType>
+    </column>
+    <column id="92" parent="15" name="postTime">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="93" parent="15" name="username">
+      <Position>4</Position>
+      <DataType>varchar(99)|0</DataType>
+    </column>
+    <column id="94" parent="15" name="commentID">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="95" parent="15" name="articleID">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="96" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>commentReplyID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="97" parent="16" name="commentReplyID">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="98" parent="16" name="content">
+      <Position>2</Position>
+      <DataType>varchar(500)|0</DataType>
+    </column>
+    <column id="99" parent="16" name="postTime">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="100" parent="16" name="username">
+      <Position>4</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="101" parent="16" name="userAvatar">
+      <Position>5</Position>
+      <DataType>varchar(256)|0</DataType>
+    </column>
+    <column id="102" parent="16" name="articleID">
+      <Position>6</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="103" parent="16" name="commentID">
+      <Position>7</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <index id="104" parent="16" name="articleID">
+      <ColNames>articleID</ColNames>
+    </index>
+    <index id="105" parent="16" name="commentID">
+      <ColNames>commentID</ColNames>
+    </index>
+    <index id="106" parent="16" name="username">
+      <ColNames>username
+userAvatar</ColNames>
+    </index>
+    <key id="107" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>commentReplyID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="108" parent="16" name="CommentReply_beta_1_ibfk_1">
+      <ColNames>username
+userAvatar</ColNames>
+      <RefSchemaName>uoacoda</RefSchemaName>
+      <RefTableName>UserInfo_beta_1</RefTableName>
+      <RefColNames>username
+avatar</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="109" parent="16" name="CommentReply_beta_1_ibfk_2">
+      <ColNames>articleID</ColNames>
+      <RefSchemaName>uoacoda</RefSchemaName>
+      <RefTableName>Article_beta_1</RefTableName>
+      <RefColNames>articleID</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="110" parent="16" name="CommentReply_beta_1_ibfk_3">
+      <ColNames>commentID</ColNames>
+      <RefSchemaName>uoacoda</RefSchemaName>
+      <RefTableName>Comment_beta_1</RefTableName>
+      <RefColNames>commentID</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="111" parent="17" name="commentID">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="112" parent="17" name="content">
+      <Position>2</Position>
+      <DataType>tinytext|0</DataType>
+    </column>
+    <column id="113" parent="17" name="postTime">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="114" parent="17" name="username">
+      <Position>4</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="115" parent="17" name="userAvatar">
+      <Position>5</Position>
+      <DataType>varchar(256)|0</DataType>
+    </column>
+    <column id="116" parent="17" name="articleID">
+      <Position>6</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <index id="117" parent="17" name="articleID">
+      <ColNames>articleID</ColNames>
+    </index>
+    <index id="118" parent="17" name="username">
+      <ColNames>username
+userAvatar</ColNames>
+    </index>
+    <key id="119" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>commentID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="120" parent="17" name="Comment_beta_1_ibfk_1">
+      <ColNames>username
+userAvatar</ColNames>
+      <RefSchemaName>uoacoda</RefSchemaName>
+      <RefTableName>UserInfo_beta_1</RefTableName>
+      <RefColNames>username
+avatar</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="121" parent="17" name="Comment_beta_1_ibfk_2">
+      <ColNames>articleID</ColNames>
+      <RefSchemaName>uoacoda</RefSchemaName>
+      <RefTableName>Article_beta_1</RefTableName>
+      <RefColNames>articleID</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="122" parent="18" name="salt">
+      <Position>1</Position>
+      <DataType>blob|0</DataType>
+    </column>
+    <column id="123" parent="18" name="iterations">
+      <Position>2</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="124" parent="18" name="nickName">
+      <Position>3</Position>
+      <DataType>varchar(99)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="125" parent="18" name="lastName">
+      <Position>4</Position>
+      <DataType>varchar(99)|0</DataType>
+    </column>
+    <column id="126" parent="18" name="gender">
+      <Position>5</Position>
+      <DataType>varchar(99)|0</DataType>
+    </column>
+    <column id="127" parent="18" name="birthDate">
+      <Position>6</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="128" parent="18" name="email">
+      <Position>7</Position>
+      <DataType>varchar(99)|0</DataType>
+    </column>
+    <column id="129" parent="18" name="avatar">
+      <Position>8</Position>
+      <DataType>varchar(200)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="130" parent="18" name="username">
+      <Position>9</Position>
+      <DataType>varchar(99)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="131" parent="18" name="password">
+      <Position>10</Position>
+      <DataType>blob|0</DataType>
+    </column>
+    <column id="132" parent="18" name="firstName">
+      <Position>11</Position>
+      <DataType>varchar(99)|0</DataType>
+    </column>
+    <column id="133" parent="18" name="serialNum">
+      <Position>12</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <index id="134" parent="18" name="UserInfo_nickName_uindex">
+      <ColNames>nickName</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="135" parent="18" name="UserInfo_username_uindex">
+      <ColNames>username</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="136" parent="18" name="UserInfo_serialNum_uindex">
+      <ColNames>serialNum</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="137" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>username
+nickName</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="138" parent="18" name="UserInfo_nickName_uindex">
+      <ColNames>nickName</ColNames>
+      <UnderlyingIndexName>UserInfo_nickName_uindex</UnderlyingIndexName>
+    </key>
+    <key id="139" parent="18" name="UserInfo_username_uindex">
+      <ColNames>username</ColNames>
+      <UnderlyingIndexName>UserInfo_username_uindex</UnderlyingIndexName>
+    </key>
+    <key id="140" parent="18" name="UserInfo_serialNum_uindex">
+      <ColNames>serialNum</ColNames>
+      <UnderlyingIndexName>UserInfo_serialNum_uindex</UnderlyingIndexName>
+    </key>
+    <column id="141" parent="19" name="userID">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="142" parent="19" name="username">
+      <Position>2</Position>
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="143" parent="19" name="password">
+      <Position>3</Position>
+      <DataType>blob|0</DataType>
+    </column>
+    <column id="144" parent="19" name="salt">
+      <Position>4</Position>
+      <DataType>blob|0</DataType>
+    </column>
+    <column id="145" parent="19" name="iterations">
+      <Position>5</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="146" parent="19" name="firstName">
+      <Position>6</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="147" parent="19" name="lastName">
+      <Position>7</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="148" parent="19" name="email">
+      <Position>8</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="149" parent="19" name="birthDate">
+      <Position>9</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="150" parent="19" name="gender">
+      <Position>10</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="151" parent="19" name="avatar">
+      <Position>11</Position>
+      <DataType>varchar(256)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="152" parent="19" name="googleID">
+      <Position>12</Position>
+      <DataType>varchar(99)|0</DataType>
+    </column>
+    <index id="153" parent="19" name="userID">
+      <ColNames>userID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="154" parent="19" name="username">
+      <ColNames>username</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="155" parent="19" name="googleID">
+      <ColNames>googleID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="156" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>username
+avatar</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="157" parent="19" name="userID">
+      <ColNames>userID</ColNames>
+      <UnderlyingIndexName>userID</UnderlyingIndexName>
+    </key>
+    <key id="158" parent="19" name="username">
+      <ColNames>username</ColNames>
+      <UnderlyingIndexName>username</UnderlyingIndexName>
+    </key>
+    <key id="159" parent="19" name="googleID">
+      <ColNames>googleID</ColNames>
+      <UnderlyingIndexName>googleID</UnderlyingIndexName>
+    </key>
+    <column id="160" parent="20" name="follower">
+      <Position>1</Position>
+      <DataType>varchar(99)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="161" parent="20" name="follow">
+      <Position>2</Position>
+      <DataType>varchar(99)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="162" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>follow
+follower</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="163" parent="21" name="follower">
+      <Position>1</Position>
+      <DataType>varchar(99)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="164" parent="21" name="follow">
+      <Position>2</Position>
+      <DataType>varchar(99)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="165" parent="21" name="follower">
+      <ColNames>follower</ColNames>
+    </index>
+    <key id="166" parent="21" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>follow
+follower</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="167" parent="21" name="UserRelationship_beta_1_ibfk_2">
+      <ColNames>follower</ColNames>
+      <RefSchemaName>uoacoda</RefSchemaName>
+      <RefTableName>UserInfo_beta_1</RefTableName>
+      <RefColNames>username</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="168" parent="21" name="UserRelationship_beta_1_ibfk_1">
+      <ColNames>follow</ColNames>
+      <RefSchemaName>uoacoda</RefSchemaName>
+      <RefTableName>UserInfo_beta_1</RefTableName>
+      <RefColNames>username</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="169" parent="22" name="articleID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="170" parent="22" name="likedBy">
+      <Position>2</Position>
+      <DataType>varchar(99)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="171" parent="22" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>articleID
+likedBy</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

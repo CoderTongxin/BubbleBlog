@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500i,600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body{
+    background-color: #565D6B;
+}
+.ui.left.close.rail,.ui.sticky{
+    width: 80px !important;
+}
+.ui.ribbon.label {
+    position: absolute;
+    left: 102.2%;
+}
+.sub.header{
+    display: block !important;
+}
+.multimediaPreview{
+    width:100%;
+    text-align:center;
+}
+#copyright {
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.ui.large.aligned.divided.list{
+    margin: 0;!important;
+}
+
+a, p, h1, h2, h3, h4, h5 {
+    font-family: 'Raleway', sans-serif;
+}
+
+i.ui.icon.borderless.four.item.menu {
+    font-size: 60px;
+}
+
+.left.ui.rail {
+    padding-left: 20%;
+}
+
+.ui.basic.button {
+    box-shadow: none;
+}
+
+.ui.basic.button:hover {
+    box-shadow: none !important;
+}
+
+.ui.text.container.article {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+img.userAvatar {
+    height: 100px;
+}
+
+/*fixed background image's height*/
+.ui.image.backGround {
+    overflow: hidden;
+    max-height: 270px;
+}
+
+/*change position of icon image*/
+.ui.small.image.iconImage {
+    position: absolute;
+    bottom: 20%;
+    right: 50%;
+    transform: translateX(50%);
+    border: 5px solid white;
+    border-radius: 3px;
+}
+
+/*display the user icon*/
+.ui.basic.segment {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*delete other animation for buttons*/
+.ui.button {
+    transition: none !important;
+}
+
+/*change card width to fit container*/
+.ui.cards > .card, .ui.card {
+    width: auto;
+}
+
+.ui.card {
+    box-shadow: none;
+}
+
+.ui.attached.segment{
+    overflow: auto;!important;
+}
+
+div{
+    word-wrap: break-word;         /* All browsers since IE 5.5+ */
+    overflow-wrap: break-word;     /* Renamed property in CSS3 draft spec */
+}
+
+/*position in card*/
+.content {
+    text-align: center;
+}
+.likeNum{
+    font-family: Montserrat, sans-serif;
+}
+.ui.button.topButton {
+    display: none;
+    bottom: 0px;
+    right: 1px !important;
+    line-height: 30px;
+    position: fixed;
+    background-color: rgba(123, 172, 172, 0.33);
+    color: white;
+}
+
+
+.ui.pointing.menu {
+    background-color: #FFFFFF;
+!important;
+}
+
+i.cardIcons {
+    font-size: 30px;
+    color: #1D3557;
+}
+
+.ui.attached.right.aligned.segment {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: none;
+    font-size: 15px;
+}
+
+
+a.ui.left.floated.icon.button,div#flipright,div#flipleft{
+    background-color: transparent;
+}
+
+.ui.center.aligned.container.responAvatar{
+    display: none;
+}
+
+.ui.segment.keepContent{
+    padding: 30px;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+i.ion-android-favorite-outline{
+    color: darkred;
+}
+
+h3.ui.header{
+    margin: 0em;
+}
+
+.ui.card{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+@media only screen and (max-width: 900px) {
+    .ui.text.container.article {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .ui.center.aligned.container.responAvatar{
+        display: block !important;
+        padding-top: 2em;
+    }
+    .ui.left.close.rail{
+        display: none !important;
+    }
+
+}
+@media only screen and (max-width: 560px) {
+    iframe,video{
+        height: auto;
+        min-height: 200px;
+    }
+}
+
+#Loader{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#followInfo， #followerInfo{
+    margin-bottom: 30px;
+}
+
+div#noArticleMessage {
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+div#Loader {
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+img,iframe,audio,video{
+    max-width: 100%;
+    margin: auto;
+}
+
+

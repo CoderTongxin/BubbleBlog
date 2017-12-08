@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="bubble_beta">
+    <output-path>$PROJECT_DIR$/out/artifacts/bubble_beta</output-path>
+    <root id="archive" name="bubble_beta.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="coda_project" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="libs" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="coda_project/web/Web" />
+    </root>
+  </artifact>
+</component>

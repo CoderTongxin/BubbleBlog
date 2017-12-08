@@ -1,0 +1,69 @@
+div#ArticleContainer {
+    padding-top: 50px;
+}
+
+body{
+    background-color: #565D6B;
+}
+#id{
+    display: none;
+}
+div{
+    word-wrap: break-word;         /* All browsers since IE 5.5+ */
+    overflow-wrap: break-word;     /* Renamed property in CSS3 draft spec */
+}
+.ui.attached.segment{
+    overflow: auto;!important;
+    border: none;
+}
+
+#deleteArticleBtn:hover{
+    background-color: #F28790;
+    color: white;
+}
+
+#editArticleBtn:hover{
+    background-color: #A7D3AE;
+    color: white;
+}
+
+#commentSubmitBtn:hover{
+    background-color: #a6bfd2;
+    color: white;
+}
+
+.ui.labeled.button:not([class*="left labeled"]) > .label {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.ui.labeled.button:not([class*="left labeled"]) > .button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.ui.segment.keepContent{
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+}
+
+.ui.segment {
+    border-radius: 0;
+}
+
+img,iframe,audio,video{
+    max-width: 100%;
+    margin: auto;
+}
+@media only screen and (max-width: 390px) {
+    .ui.button {
+        font-size: 10px;!important;
+    }
+}
+@media only screen and (max-width: 530px) {
+      iframe,video{
+       height: auto;
+        min-height: 200px;
+    }
+}

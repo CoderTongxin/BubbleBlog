@@ -1,0 +1,53 @@
+
+.ui.vertical.center.aligned.segment {
+    border: none;
+    background-color: white;
+}
+
+i.iconClass {
+    font-size: 35px;
+    color: black;
+}
+
+i.iconClass:hover {
+    color: #457B9D;
+}
+
+.toc.item{
+    display: none;
+}
+
+a.accoritem{
+    color: black;
+}
+
+a.accoritem:hover{
+    color: lightgrey;
+}
+
+.ui.accordion{
+    pointer-events: none;
+    cursor:default;
+}
+
+
+@media only screen and (max-width: 900px) {
+   .invisibleforPhone{
+       display: none !important;
+   }
+
+    .toc.item{
+        display: block !important;
+    }
+
+    .ui.accordion{
+        pointer-events: auto !important;
+        cursor:auto;
+    }
+
+    i.ion-ios-more-outline.sidebarIcon {
+        color: black;
+    }
+}
+
+

@@ -1,0 +1,154 @@
+body {
+    background-color: #565D6B !important;
+}
+
+.ui.text.container.edit {
+    padding-top: 30px;
+}
+
+.hero-unit {
+    border-radius: 0;
+}
+
+.ui.form {
+    padding-top: 1em;
+}
+
+#title {
+    height: 38px;
+    margin-bottom: 5px
+}
+
+.btn {
+    border: none;
+    background-image: none;
+}
+
+.btn:hover {
+    background-color: rgba(151, 200, 199, 0.45);
+}
+
+.ui.fluid.normal.dropdown {
+    max-width: 150px;
+}
+
+.ui.form {
+    padding-top: 1em;
+}
+
+.btn {
+    border: none;
+    background-image: none;
+}
+
+#editor {
+    max-height: 600px;
+    height: 500px;
+    background-color: white;
+    border-collapse: separate;
+    padding: 4px;
+    box-sizing: content-box;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    overflow: scroll;
+    outline: none;
+}
+
+#voiceBtn {
+    width: 20px;
+    color: transparent;
+    background-color: transparent;
+    transform: scale(2.0, 2.0);
+    -webkit-transform: scale(2.0, 2.0);
+    -moz-transform: scale(2.0, 2.0);
+    border: transparent;
+    cursor: pointer;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+div[data-role="editor-toolbar"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dropdown-menu a {
+    cursor: pointer;
+}
+
+.image.iconImage {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+
+.myLabel {
+    margin: 0;
+}
+
+.input {
+    display: none;
+}
+
+input#title {
+    min-height: 35px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.submitBtnSet {
+    text-align: right;
+}
+
+#submitBtn:hover, #editBtn:hover, .ui.right.floated.button :hover {
+    background-color: #A7D3AE;
+    color: white;
+}
+
+#deleteBtn:hover {
+    background-color: #F28790;
+    color: white;
+}
+
+.ui.segment {
+    border-radius: 0;
+    box-shadow: none;
+}
+#errorInfo{
+    color: red;
+}
+#firstBtn{
+    margin-left:5px
+}
+
+@media only screen and (max-width: 580px) {
+    .hero-unit {
+        padding: 20px 20px 40px 20px;
+    }
+
+    #editor {
+        height: 300px;
+    }
+
+    .btn-group > .btn {
+        font-size: 10px;
+    }
+
+    .iconImage {
+        width: 10px;
+        height: 10px;
+    }
+
+    .btn {
+        padding: 4px
+    }
+
+}
